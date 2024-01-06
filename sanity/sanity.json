@@ -1,10 +1,10 @@
 {
 	"root": true,
 	"project": {
-		"name": "nextp"
+		"name": "portfolio"
 	},
 	"api": {
-		"projectId": "d7e1b197",
+		"projectId": "ipo27378",
 		"dataset": "production"
 	},
 	"plugins": [

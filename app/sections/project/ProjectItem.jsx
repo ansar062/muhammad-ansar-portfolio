@@ -17,6 +17,7 @@ export function ProjectItem({ project, index }) {
 		original: img,
 		loading: "lazy"
 	}));
+	console.log(galleryImages)
 
 	return (
 		<article
@@ -60,11 +61,11 @@ export function ProjectItem({ project, index }) {
 						<div className="flex-center flex-wrap gap-3">
 							{stack.map((tag) => (
 								<span
-									key={tag}
+									key={tag._key}
 									tabIndex="0"
 									className="px-2 text-sm leading-normal rounded bg-badge-light/50 dark:bg-badge-dark"
 								>
-									{tag}
+									{tag.title}
 								</span>
 							))}
 						</div>
