@@ -44,5 +44,7 @@ export const AppMetadata = {
 		],
 		locale: "en-US",
 		type: "website"
+
+		
 	}
 };
