@@ -32,13 +32,13 @@ export const AppMetadata = {
 		siteName: `${author} | Portfolio`,
 		images: [
 			{
-				url: "https://drive.google.com/file/d/1c_BQNpDmEWaAZmw7pNKUamr9ByasPzcG/view?usp=sharing",
+				url: "https://muhammad-ansar-portfolio.vercel.app/screenshot.png",
 				width: 800,
 				height: 600,
 				alt: "My personal portfolio website"
 			},
 			{
-				url: "https://drive.google.com/file/d/1c_BQNpDmEWaAZmw7pNKUamr9ByasPzcG/view?usp=sharing",
+				url: "https://muhammad-ansar-portfolio.vercel.app/screenshot.png",
 				width: 1800,
 				height: 1600,
 				alt: "My personal portfolio website"
