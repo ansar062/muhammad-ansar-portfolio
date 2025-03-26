@@ -4,6 +4,8 @@ import { useEffect, useRef, useState } from "react";
 import { LazyMotion, domAnimation, useInView } from "framer-motion";
 
 const TimeLineData = [
+	{ year: 2024, text: "Start Learning Django/DRF" },
+	{ year: 2024, text: "Start Working as Software Engineer at Mindblaze Technologies" },
 	{ year: 2023, text: "Dive completely into Next.js" },
 	{ year: 2023, text: "Start my journey as a React developer" },
 	{ year: 2023, text: "Dive completely into React.js" },
