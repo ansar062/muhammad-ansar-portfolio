@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
-		"build": "cd sanity && npm install && npx sanity build ../public/studio -y && cd .. && next build",
+		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
 		"format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
