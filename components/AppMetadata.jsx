@@ -1,6 +1,6 @@
 const author = "Muhammad Ansar";
 const description =
-	"Software developer from Pakistan, Republic of, who loves to develop beautiful websites, single page applications, customer relationship management or code from scratch using React and Next.js";
+	"Full-stack software engineer from Pakistan building web apps with Next.js, cross-platform apps with React Native, and backends with Laravel and Node.js — from database to deployment.";
 const url = "https://muhammad-ansar-portfolio.vercel.app/";
 export const AppMetadata = {
 	metadataBase: new URL("https://muhammad-ansar-portfolio.vercel.app/"),
@@ -14,11 +14,13 @@ export const AppMetadata = {
 	},
 	keywords: [
 		"ansar",
-		"muhammad ansar - software developer",
-		"Frontend developer",
-		"Flutter developer",
+		"muhammad ansar - software engineer",
+		"Full-stack developer",
+		"Next.js developer",
+		"React Native developer",
+		"Laravel developer",
 		"Portfolio website",
-		"Frontend Developer Portfolio",
+		"Full-stack Developer Portfolio",
 		"developer",
 		"portfolio"
 	],

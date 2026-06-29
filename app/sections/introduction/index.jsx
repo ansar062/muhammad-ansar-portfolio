@@ -16,10 +16,10 @@ export function WelcomeSection() {
 
 	let [count, setCount] = useState(0);
 	const [text] = useState([
-		"build interactive UI using React",
-		"develop websites using Next.js",
-		"convert design into modern UI",
-		"build Flutter apps for Android/iOS",
+		"build full-stack apps with Next.js",
+		"craft cross-platform apps with React Native",
+		"architect robust backends with Laravel & Node",
+		"bring interfaces to life with Three.js & GSAP",
 	]);
 
 	const onClick = (e) => scrollToEl(e);
@@ -52,7 +52,7 @@ export function WelcomeSection() {
 							}}
 						>
 							<p>
-								Hi, I&apos;m <mark>Muhammad Ansar</mark> a <mark>passionate</mark> software developer.
+								Hi, I&apos;m <mark>Muhammad Ansar</mark> a <mark>passionate</mark> full-stack developer.
 							</p>
 						</h1>
 

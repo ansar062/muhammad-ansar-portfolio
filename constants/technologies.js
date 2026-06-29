@@ -3,7 +3,7 @@ import { DiCss3, DiVisualstudio } from "react-icons/di";
 import { IoLogoJavascript } from "react-icons/io";
 import { FaReact, FaWordpressSimple, FaFigma, FaTrello } from "react-icons/fa";
 import { BsBootstrap } from "react-icons/bs";
-import { TbBrandNextjs, TbBrandTailwind } from "react-icons/tb";
+import { TbBrandNextjs, TbBrandTailwind, TbBrandReactNative } from "react-icons/tb";
 import { RiFlutterFill } from "react-icons/ri";
 import AdobeXDIcon from "public/assets/svg/adobexd.svg";
 import ZeplinIcon from "public/assets/svg/zeplin.svg";
@@ -16,12 +16,16 @@ import StyledIcon from "public/assets/svg/styledcomponents.svg";
 import Android from "public/assets/svg/android.svg"
 import { DiDjango } from "react-icons/di";
 import { FaNode } from "react-icons/fa";
-import { SiExpress, SiClickup  } from "react-icons/si";
+import { SiExpress, SiClickup, SiLaravel, SiDocker, SiThreedotjs, SiGreensock } from "react-icons/si";
 
 export const TECHNOLOGIES = [
 	{
 		category: "Mobile",
-		items: [{ name: "Flutter", icon: <RiFlutterFill size={32} /> }, { name: "Android Studio", icon: <Android size={32} /> }]
+		items: [
+			{ name: "React Native", icon: <TbBrandReactNative size={32} /> },
+			{ name: "Flutter", icon: <RiFlutterFill size={32} /> },
+			{ name: "Android Studio", icon: <Android size={32} /> }
+		]
 	},
 	{
 		category: "Front-end",
@@ -37,6 +41,8 @@ export const TECHNOLOGIES = [
 			{ name: "Bootstrap", icon: <BsBootstrap size={32} /> },
 			// { name: "Chakra", icon: <ChakraIcon width={32} /> },
 			{ name: "styled components", icon: <StyledIcon width={32} /> },
+			{ name: "Three.js", icon: <SiThreedotjs size={32} /> },
+			{ name: "GSAP", icon: <SiGreensock size={32} /> },
 			// { name: "HeadlessUI", icon: <HeadlessUiIcon width={32} /> }
 		]
 	},
@@ -45,6 +51,7 @@ export const TECHNOLOGIES = [
 		items: [
 			{ name: "Node", icon: <FaNode size={32} /> },
 			{ name: "Express", icon: <SiExpress size={32} /> },
+			{ name: "Laravel", icon: <SiLaravel size={32} /> },
 			{ name: "Django", icon: <DiDjango size={32} /> },
 		]
 	},
@@ -63,6 +70,7 @@ export const TECHNOLOGIES = [
 			{ name: "Jira", icon: <JiraIcon width={32} /> },
 			{ name: "Clickup", icon: <SiClickup width={32} /> },
 			// { name: "Trello", icon: <FaTrello size={32} /> },
+			{ name: "Docker", icon: <SiDocker size={32} /> },
 			{ name: "Github", icon: <AiFillGithub size={32} /> },
 			{ name: "Gitlab", icon: <AiFillGitlab size={32} /> },
 			{ name: "VsCode", icon: <DiVisualstudio size={32} /> },

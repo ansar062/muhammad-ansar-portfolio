@@ -25,26 +25,26 @@ export function AboutSection() {
 						}}
 					>
 						<p>
-							My name is Muhammad Ansar. I am currently pursuing my bachelors degree from University of Gujrat, computer
-							science faculty.
+							My name is Muhammad Ansar. I graduated in Computer Science from the University of Gujrat in 2024,
+							and I currently work as a Software Engineer at Mindblaze Technologies.
 						</p>
 						<p>
-							During my university years, I developed a deep passion for Programming Fundametals, Object Oriented
-							Programming, DSA, DBMS, CN, and I consistently engaged in learning new concepts and techniques in this field.
+							During my university years, I developed a deep passion for the fundamentals &mdash; Object Oriented
+							Programming, Data Structures &amp; Algorithms, Databases, and Computer Networks &mdash; and I&apos;ve never
+							stopped learning new concepts and techniques since.
 						</p>
 						<p>So, officially, my programming journey began in 2021 as a Flutter Developer.</p>
 						<p className="my-3.5">
-							I enjoy learning technologies that interest me, which is why I dedicated a significant
-							amount of time to working with Flutter.
+							I enjoy diving deep into technologies that interest me, which is why I spent my early years
+							building cross-platform mobile apps with Flutter before moving into the web.
 						</p>
 						<p>
-							One day, I decided to try something new, and I started learning React. I was so
-							excited to see how fast I can build a website with it, and how easy it is to maintain
-							it. Consequently, I quickly learnt Next.js.
+							Curiosity pulled me toward React, and I was hooked by how fast I could build and maintain
+							interfaces with it. That naturally led me into Next.js, and soon after into building complete products end to end.
 						</p>
 						<p className="my-3.5">
-							So here i am still stick&lsquo;s to Web Development. I really enjoy working with React, Nextjs
-							other technologies of Web Development.
+							Today I work as a full-stack developer, shipping web apps with Next.js, cross-platform apps with
+							React Native, and backends with Laravel and Node.js &mdash; from database to deployment.
 						</p>
 					</div>
 				</div>
