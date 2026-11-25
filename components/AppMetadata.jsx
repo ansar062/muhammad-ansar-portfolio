@@ -1,9 +1,9 @@
 const author = "Muhammad Ansar";
 const description =
-	"Full-stack software engineer from Pakistan building web apps with Next.js, cross-platform apps with React Native, and backends with Laravel and Node.js — from database to deployment.";
-const url = "https://muhammad-ansar-portfolio.vercel.app/";
+	"Software engineer from Pakistan building AI, web and mobile products: real-time voice AI agents with LiveKit and LLMs, web apps with Next.js, cross-platform apps with React Native, and backends with FastAPI, Laravel and Node.js.";
+const url = "https://www.ans4r.site/";
 export const AppMetadata = {
-	metadataBase: new URL("https://muhammad-ansar-portfolio.vercel.app/"),
+	metadataBase: new URL("https://www.ans4r.site/"),
 	title: {
 		default: `Portfolio | ${author}`,
 		template: `%s | ${author}`
@@ -15,6 +15,9 @@ export const AppMetadata = {
 	keywords: [
 		"ansar",
 		"muhammad ansar - software engineer",
+		"AI engineer",
+		"LLM engineer",
+		"LiveKit voice AI developer",
 		"Full-stack developer",
 		"Next.js developer",
 		"React Native developer",
@@ -34,13 +37,13 @@ export const AppMetadata = {
 		siteName: `${author} | Portfolio`,
 		images: [
 			{
-				url: "https://muhammad-ansar-portfolio.vercel.app/screenshot.png",
+				url: "https://www.ans4r.site/screenshot.png",
 				width: 800,
 				height: 600,
 				alt: "My personal portfolio website"
 			},
 			{
-				url: "https://muhammad-ansar-portfolio.vercel.app/screenshot.png",
+				url: "https://www.ans4r.site/screenshot.png",
 				width: 1800,
 				height: 1600,
 				alt: "My personal portfolio website"

@@ -16,10 +16,10 @@ export function WelcomeSection() {
 
 	let [count, setCount] = useState(0);
 	const [text] = useState([
-		"build full-stack apps with Next.js",
-		"craft cross-platform apps with React Native",
-		"architect robust backends with Laravel & Node",
-		"bring interfaces to life with Three.js & GSAP",
+		"build voice AI agents on LiveKit",
+		"ship full-stack apps with Next.js",
+		"craft mobile apps with React Native",
+		"animate the web with Three.js",
 	]);
 
 	const onClick = (e) => scrollToEl(e);
@@ -52,7 +52,7 @@ export function WelcomeSection() {
 							}}
 						>
 							<p>
-								Hi, I&apos;m <mark>Muhammad Ansar</mark> a <mark>passionate</mark> full-stack developer.
+								Hi, I&apos;m <mark>Muhammad Ansar</mark>, a <mark>software engineer</mark> building AI, web and mobile products.
 							</p>
 						</h1>
 
@@ -139,7 +139,7 @@ function TextElement({ element }) {
 		<span
 			tabIndex="0"
 			ref={ref}
-			className="text-[17px] md:text-2xl"
+			className="text-[17px] md:text-2xl whitespace-nowrap"
 			style={{
 				transform: isInView ? "none" : "translateX(-200px)",
 				opacity: isInView ? 1 : 0,

@@ -1,7 +1,5 @@
-export const metadata = {
-	title: `Projects`
-};
+import { ProjectsPage } from "./components/ProjectsPage";
 
-export default function Page({ children }) {
-	return <div className="container-md">{children}</div>;
+export default function Page() {
+	return <ProjectsPage />;
 }

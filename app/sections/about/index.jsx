@@ -25,8 +25,9 @@ export function AboutSection() {
 						}}
 					>
 						<p>
-							My name is Muhammad Ansar. I graduated in Computer Science from the University of Gujrat in 2024,
-							and I currently work as a Software Engineer at Mindblaze Technologies.
+							My name is Muhammad Ansar. I graduated in Software Engineering from the University of Gujrat in 2024,
+							and I currently work as a Software Engineer at Mindblaze Technologies, building AI, web and mobile
+							products.
 						</p>
 						<p>
 							During my university years, I developed a deep passion for the fundamentals &mdash; Object Oriented
@@ -43,8 +44,10 @@ export function AboutSection() {
 							interfaces with it. That naturally led me into Next.js, and soon after into building complete products end to end.
 						</p>
 						<p className="my-3.5">
-							Today I work as a full-stack developer, shipping web apps with Next.js, cross-platform apps with
-							React Native, and backends with Laravel and Node.js &mdash; from database to deployment.
+							Today I build products end to end &mdash; real-time voice AI tutoring on LiveKit Agents, LLM
+							pipelines with OpenAI, Anthropic, Gemini and OpenRouter models and the evaluations to keep them
+							honest, web apps with Next.js, cross-platform apps with React Native, and backends with FastAPI,
+							Laravel and PostgreSQL &mdash; from database to deployment.
 						</p>
 					</div>
 				</div>
