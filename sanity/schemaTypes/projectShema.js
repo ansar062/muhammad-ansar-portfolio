@@ -79,6 +79,21 @@ export const projects = defineType({
 			name: "liveUrl",
 			title: "Live URL",
 			type: "url"
+		}),
+
+		defineField({
+			name: "linkType",
+			title: "Link label",
+			description: "Shown on the link to the Live URL. Leave empty to use Demo for projects before Sep 2024 and Live after.",
+			type: "string",
+			options: {
+				list: [
+					{ title: "Live", value: "live" },
+					{ title: "Demo", value: "demo" }
+				],
+				layout: "radio",
+				direction: "horizontal"
+			}
 		})
 	]
 });

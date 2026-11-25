@@ -9,7 +9,11 @@ import { FiExternalLink } from "react-icons/fi";
 import "react-image-gallery/styles/css/image-gallery.css";
 
 export function ProjectItem({ project, index }) {
-	const { description, images, liveUrl, repoUrl, stack, title } = project;
+	const { createdAt, description, images, linkType, liveUrl, repoUrl, stack, title } = project;
+	// Shipped products link to the live site; older student and practice projects to a demo.
+	// Projects without the field fall back to: before Sep 2024 (pre-Mindblaze) means demo.
+	const isDemo = linkType ? linkType === "demo" : (createdAt ?? "") < "2024-09-01";
+	const liveLabel = isDemo ? "Demo" : "Live";
 	const cardRef = useRef(null);
 	const isInView = useInView(cardRef, { once: true });
 
@@ -60,7 +64,7 @@ export function ProjectItem({ project, index }) {
 						<div className="flex-center flex-wrap gap-3">
 							{stack.map((tag) => (
 								<span
-									key={tag._key}
+									key={tag._id ?? tag.title}
 									tabIndex="0"
 									className="px-2 text-sm leading-normal rounded bg-badge-light/50 dark:bg-badge-dark"
 								>
@@ -87,10 +91,10 @@ export function ProjectItem({ project, index }) {
 								href={liveUrl}
 								target="_blank"
 								className="icon-link-btn"
-								title="Go to live address"
+								title={isDemo ? "Open the demo" : "Open the live site"}
 							>
 								<FiExternalLink />
-								<span>Demo</span>
+								<span>{liveLabel}</span>
 							</Link>
 						)}
 					</div>

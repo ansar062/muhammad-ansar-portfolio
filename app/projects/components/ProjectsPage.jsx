@@ -6,16 +6,14 @@ import { ErrorBoundary } from "react-error-boundary";
 import { HeadingDivider, Loader } from "components";
 import { Filter } from "./Filter";
 import { fetcher } from "utils/fetcher";
+import { allProjectsUrl, projectsByCategoryUrl } from "utils/projectQueries";
 import Error from "../../error";
 import { Projects } from "./Projects";
 
-const url = `${process.env.NEXT_PUBLIC_SANITY_URL}${process.env.NEXT_PUBLIC_SANITY_ALL_PROJECTS}`;
 
 export function ProjectsPage() {
 	const [category, setCategory] = useState(undefined);
-	const filterUrl = `${process.env.NEXT_PUBLIC_SANITY_URL}${process.env.NEXT_PUBLIC_SANITY_PROJECTS}${category}${process.env.NEXT_PUBLIC_SANITY_PROJECT_BY_CATEGORY}`;
-
-	const fetchUrl = category ? filterUrl : url;
+	const fetchUrl = category ? projectsByCategoryUrl(category) : allProjectsUrl;
 	const { data, error } = useSWR(fetchUrl, fetcher);
 	const filteredProjects = data?.result;
 

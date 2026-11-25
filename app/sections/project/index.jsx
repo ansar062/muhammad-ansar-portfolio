@@ -4,18 +4,18 @@ import Link from "next/link";
 import useSWR from "swr";
 import { HeadingDivider, Loader } from "components";
 import { fetcher } from "utils/fetcher";
+import { latestProjectsUrl } from "utils/projectQueries";
 import Error from "../../error";
 import { ErrorBoundary } from "react-error-boundary";
 import { Projects } from "../../projects/components/Projects";
 import { SITE_ROUTES } from "../../../constants";
 
-const url = `${process.env.NEXT_PUBLIC_SANITY_URL}${process.env.NEXT_PUBLIC_SANITY_LATEST_PROJECTS}`;
 
 export function ProjectsSection() {
 	const btnRef = useRef(null);
 	const isBtnInView = useInView(btnRef, { once: true });
 
-	const { data, error } = useSWR(url, fetcher);
+	const { data, error } = useSWR(latestProjectsUrl, fetcher);
 	const projects = data?.result;
 
 	if (error && !data) {
